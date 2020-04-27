@@ -26,6 +26,9 @@ case $OSARCH in
     arm64)
         BINTAG=Linux_arm64
         ;;
+    aarch64)
+        BINTAG=Linux_arm64
+        ;;
     arm*)
         BINTAG=Linux_armv6
         ;;
