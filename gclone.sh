@@ -4,10 +4,10 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
-if ! command -v systemctl >/dev/null 2>&1; then
-    echo "> Sorry but this scripts is only for Linux with systemd, eg: Ubuntu 16.04+/Centos 7+ ..."
-    exit 1
-fi
+#if ! command -v systemctl >/dev/null 2>&1; then
+#    echo "> Sorry but this scripts is only for Linux with systemd, eg: Ubuntu 16.04+/Centos 7+ ..."
+#    exit 1
+#fi
 
 if [[ $(id -u) -ne 0 ]]; then
     echo "This script must be run as root" 
